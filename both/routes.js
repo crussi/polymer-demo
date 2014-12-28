@@ -57,3 +57,17 @@ Router.route("/", {
         }
     }
 });
+
+Router.route("project/:_id", {
+    name: "project",
+    action: function() {
+        if (Meteor.user()) {
+            console.log(_id);
+            this.layout("dashboardLayout");
+            return this.render("project");
+        } else {
+            this.layout("publicLayout");
+            return this.render("home");
+        }
+    }
+});
