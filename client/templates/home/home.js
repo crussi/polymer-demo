@@ -8,6 +8,7 @@ Template.home.rendered = function() {
 
 Template.home.events = {
     'click paper-button': function() {
-        return window.location = 'https://usercycle.com';
+        //return window.location = 'https://usercycle.com';
+        Router.go("/sign-up");
     }
 };
