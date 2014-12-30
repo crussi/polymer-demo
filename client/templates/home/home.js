@@ -1,8 +1,8 @@
 Template.home.rendered = function() {
-    document.title = "USERcycle | growth analytics for every app";
+    document.title = "Wedo | get things done, together";
     return $("<meta>", {
         name: "description",
-        content: "Growth analytics and alerts for every app"
+        content: "Get things done, together"
     }).appendTo("head");
 };
 
