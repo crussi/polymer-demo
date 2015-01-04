@@ -1,5 +1,5 @@
 Template.home.rendered = function() {
-    document.title = "Wedo | get things done, together";
+    document.title = "Wedo | better together";
     return $("<meta>", {
         name: "description",
         content: "Get things done, together"
@@ -8,7 +8,6 @@ Template.home.rendered = function() {
 
 Template.home.events = {
     'click paper-button': function() {
-        //return window.location = 'https://usercycle.com';
         Router.go("/sign-up");
     }
 };

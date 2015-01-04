@@ -31,6 +31,10 @@ this.GlobalUI = (function() {
 
 })();
 
+//Note: these aren't being set to meaningful values in this sample
+//They're used as conditional statements for the paper-action-dialog
+//in the globalLayout.  I think it is because mobile devices need a
+//full screen dialog.  I think these flags are designed to hold boolean values.
 Template.globalLayout.helpers({
     globalDialogTemplate: function() {
         return Session.get("global.ui.dialogTemplate");
