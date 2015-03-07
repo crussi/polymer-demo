@@ -8,11 +8,45 @@
       <core-toolbar class="toolbar toolbar-dark">
         <a class="header-logo" href="/">
           <!--<img src="/img/white-logo.png"/>-->
-            <h1>Wedo</h1>
+            <h1>Toduo</h1>
         </a>
       </core-toolbar>
       <div layout vertical fit>
         <core-menu class="nav">
+
+          <a href="#">
+              <paper-item>
+                  <core-icon icon="inbox"></core-icon>
+                  Inbox
+              </paper-item>
+          </a>
+
+          <core-submenu label="Actions" icon="check-box" active>
+              <a href="{{pathFor route='action'}}">
+                  <paper-item data-action="switch-action">
+                      <core-icon icon="chevron-right"></core-icon>
+                      Next
+                  </paper-item>
+              </a>
+              <a href="{{pathFor route='action'}}">
+                  <paper-item data-action="switch-action">
+                      <core-icon icon="chevron-right"></core-icon>
+                      Scheduled
+                  </paper-item>
+              </a>
+              <a href="{{pathFor route='action'}}">
+                  <paper-item data-action="switch-action">
+                      <core-icon icon="chevron-right"></core-icon>
+                      Waiting
+                  </paper-item>
+              </a>
+              <a href="{{pathFor route='action'}}">
+                  <paper-item data-action="switch-action">
+                      <core-icon icon="chevron-right"></core-icon>
+                      Someday
+                  </paper-item>
+              </a>
+          </core-submenu>
 
           <core-submenu label="Projects" icon="apps" active>
             <a href="{{pathFor route='project'}}">
@@ -30,18 +64,19 @@
           </core-submenu>
 
           <a href="#">
+              <paper-item>
+                  <core-icon icon="place"></core-icon>
+                  Contexts
+              </paper-item>
+          </a>
+
+          <a href="#">
             <paper-item>
               <core-icon icon="settings"></core-icon>
               Settings
             </paper-item>
           </a>
 
-          <a href="http://google.com">
-            <paper-item>
-              <core-icon icon="editor:insert-drive-file"></core-icon>
-              Google External
-            </paper-item>
-          </a>
 
           <a href="/sign-out">
             <paper-item>
